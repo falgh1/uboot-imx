@@ -26,7 +26,7 @@
 #ifndef CONFIG_ENV_IS_NOWHERE
 /* Environment in MMC */
 # if defined(CONFIG_ENV_IS_IN_MMC)
-#  define CONFIG_ENV_OFFSET		0x100000
+#  define CONFIG_ENV_OFFSET		0x200000
 /* Environment in NAND */
 # elif defined(CONFIG_ENV_IS_IN_NAND)
 #  define CONFIG_ENV_OFFSET		0x400000
