@@ -17,7 +17,7 @@
 #define VFAT_MAXLEN_BYTES	256 /* Maximum LFN buffer in bytes */
 #define VFAT_MAXSEQ		9   /* Up to 9 of 13 2-byte UTF-16 entries */
 #define PREFETCH_BLOCKS		2
-#define CONFIG_FS_FAT_MAX_CLUSTSIZE 131072
+
 #ifndef CONFIG_FS_FAT_MAX_CLUSTSIZE
 #define CONFIG_FS_FAT_MAX_CLUSTSIZE 131072
 #endif
