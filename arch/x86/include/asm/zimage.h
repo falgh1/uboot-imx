@@ -23,9 +23,9 @@
 #define COMMAND_LINE_MAGIC  0xA33F
 
 /* limits */
-#define BZIMAGE_MAX_SIZE   15*1024*1024     /* 15MB */
-#define ZIMAGE_MAX_SIZE    512*1024         /* 512k */
-#define SETUP_MAX_SIZE     32768
+#define BZIMAGE_MAX_SIZE   128*1024*1024     /* 15MB */
+#define ZIMAGE_MAX_SIZE    128*1024*1024         /* 512k */
+#define SETUP_MAX_SIZE     128*1024*1024
 
 #define SETUP_START_OFFSET 0x200
 #define BZIMAGE_LOAD_ADDR  0x100000
