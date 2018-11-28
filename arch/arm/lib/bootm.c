@@ -78,20 +78,25 @@ static void announce_and_cleanup(int fake)
 	printf("\nStarting the ameen kernel ...%s\n\n", fake ?
 		"(fake run for tracing)" : "");
 	bootstage_mark_name(BOOTSTAGE_ID_BOOTM_HANDOFF, "start_kernel");
+	printf("\nbootstage_mark_name");
 #ifdef CONFIG_BOOTSTAGE_FDT
 	bootstage_fdt_add_report();
+	printf("\nbootstage_fdt_add_report");
 #endif
 #ifdef CONFIG_BOOTSTAGE_REPORT
 	bootstage_report();
+	printf("\nbootstage_report");
 #endif
 
 #ifdef CONFIG_USB_DEVICE
 	udc_disconnect();
+	printf("\nudc_disconnect");
 #endif
 
 	board_quiesce_devices();
-
+	printf("\nboard_quiesce_devices");
 	cleanup_before_linux();
+	printf("\ncleanup_before_linux");
 }
 
 static void setup_start_tag (bd_t *bd)
